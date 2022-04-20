@@ -1,21 +1,20 @@
 const express = require('express');
-const { use } = require('express/lib/application');
 const app = express();
 const path = require('path');
 
 
+app.set('port', (process.env.PORT || 2500));
 app.use(express.static(path.join(__dirname, 'public'))); 
 
-app.set("views", __dirname + './views');
+app.set("views", __dirname + '/views');
 app.set("view engine", "ejs");
 app.engine('html', require('ejs').renderFile);
 
 const router = require('./routes/router')
 app.use(router.routes)
 
+app.listen(app.get('port'), () => {
+    console.log( `server running on port ${app.get('port')}`);
+})
 
-const PORT = 2500;
-console.log(__dirname)
-app.listen(PORT)
-console.log( `server running on port ${PORT}`);
 
