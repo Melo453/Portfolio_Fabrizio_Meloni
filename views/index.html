@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabrizio Meloni</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
 </head>
 
 <body>
     <header>
         <nav class="header">
-            <a href="">FM</a>
-            <ul class="header__menu">
-                <li>
-                    <a href="">
+            <a class="header__a" href="">fm</a>
+            <ul class="header__ul">
+                <li class="header__li">
+                    <a class="header__li--a"  href="">
                         Inicio
                     </a>
                 </li>
-                <li>
-                    <a href="">
+                <li class="header__li">
+                    <a class="header__li--a" href="">
                         Sobre mi
                     </a>
                 </li>
-                <li>
-                    <a href=""> 
+                <li class="header__li">
+                    <a class="header__li--a" href=""> 
                         Portafolio
                     </a>
                 </li>
-                <li>
-                    <a href="">
+                <li class="header__li">
+                    <a class="header__li--a" href="">
                         Contacto
                     </a>
                 </li>
@@ -44,25 +47,54 @@
     <main>
         <section class="inicio">
             <div class="inicio__text">
-                <h2> <span> Fabrizio </span> Meloni</h2>
-                <h1>Full Stack Developer</h1>
-                <a href=""></a>
+                <h2 class="inicio__h2"> <span> Fabrizio </span> Meloni</h2>
+                <h1 class="inicio__h1">Full Stack Developer</h1>
+                <button class="inicio__button"> 
+                    ver curriculum
+                </button>
                 <div class="inicio__text--icons">
                     <a href="https://www.linkedin.com/in/fabrizio-meloni-4126711b7/"  target="_blank" >
-                        <i class="fab fa-linkedin-in"></i>
+                        <i class="inicio__i fab fa-linkedin-in"></i>
                     </a>
                     <a href="https://github.com/Melo453" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i class="inicio__i fab fa-github"></i>
                     </a>
                     <a href="https://www.instagram.com/_fabrimeloni_/" target="_blank" >
-                        <i class="fab fa-instagram"></i>
+                        <i class=" inicio__i fab fa-instagram"></i>
                     </a>
                 </div>
             </div>
-            <img src="/assets/img/Foto_fabri.jpg" alt="Foto fabri">
+            <img class="inicio__img" src="/assets/img/Foto_fabri.jpg" alt="Foto fabri">
         </section>
-        <section>
+        <section class="info">
+            <div class="info__text">
+                <h2 class="info__h2">Sobre mi</h2>
+                <p class="info__p">
+                    ¡Hola! como ya habras visto me llamo Fabrizio Meloni, soy un aficionado por la tecnología y me gusta mucho picar teclas.
+                    En mis tiempos libres aparte de programar disfruto mucho de hacer gimnasia y armar cubos de rubik.
+                </p>
+            </div>
             
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">0</li>
+                        <li class="glide__slide">1</li>
+                        <li class="glide__slide">2</li>
+                    </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                </div>
+            </div>
         </section>
     </main>
 

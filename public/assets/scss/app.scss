@@ -1,1 +1,97 @@
-@import 'abstracts/_variables' , 'abstracts/_mixins' , 'base/_reset'
+@import 'abstracts/_variables' , 'abstracts/_mixins' , 'base/_reset';
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header{
+    @include flex(row, nowrap, space-around, center);
+    background-color: var(--color-terciario);
+    padding: 1.5rem 0;
+    &__ul{
+        display: none;
+    }
+
+    &__a{
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+
+    &__a::first-letter{
+        color: var(--color-quinario);
+    }
+    &__btn{
+        cursor: pointer;
+    }
+}
+
+.inicio{
+
+    @include flex(column, nowrap, center, center);
+    gap: 45px;
+    height: 80vh;
+
+    &__text{
+        @include flex(column, nowrap, center, center);
+        position: relative;
+        padding-left: 29px;
+        gap: 15px;
+    }
+    &__h2 span,
+    &__h2,
+    &__h1{
+        font-size: 1.2rem;
+    }
+    &__h2 span{
+        color: var(--color-quinario);
+    }
+    &__img{
+        max-width: 70%;
+        border-radius: 75px 25px;
+        border: solid 5px var(--color-cuaternario);
+    }
+    &__text--icons{
+        @include flex(column, nowrap, center, center);
+        position: absolute;
+        top: 0;
+        left: 0;
+        gap: 25px;
+    }
+    &__button{
+        background-color: var(--color-quinario);
+        cursor: pointer;
+        padding: .4rem 1rem;
+        border-radius: 1.25rem ;
+        text-transform: uppercase;
+        color: var(--color-primario);
+        font-size: .7rem;
+        transition: all .3s ease-in-out;
+        box-shadow: 1px 3px 11px -5px var(--color-quinario);
+    }
+}
+
+.info{
+    @include flex(column, nowrap, center,center);
+    &__text{
+        @include flex(column, nowrap, center,center);
+        gap: 15px;
+    }
+    &__h2{
+        font-size: 1.5rem;
+        position: relative;
+    }
+
+    &__h2::before{
+        content: '';
+        background-color: var(--color-cuaternario);
+        width: 70px;
+        position: absolute;
+        height: 4px;
+        bottom: -5px;
+        left: 15px;
+    }
+    &__p{
+        max-width: 85%;
+    }
+}
