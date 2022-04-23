@@ -6,6 +6,10 @@ const path = require('path');
 app.set('port', (process.env.PORT || 2500));
 app.use(express.static(path.join(__dirname, 'public'))); 
 
+/*Glide js*/ 
+app.use("/css", express.static(__dirname + "/node_modules/@glidejs/glide/dist/css"));
+app.use("/dist", express.static(__dirname + "/node_modules/@glidejs/glide/dist"));
+
 app.set("views", __dirname + '/views');
 app.set("view engine", "ejs");
 app.engine('html', require('ejs').renderFile);

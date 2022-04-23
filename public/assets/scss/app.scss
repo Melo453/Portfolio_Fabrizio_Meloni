@@ -1,4 +1,5 @@
 @import 'abstracts/_variables' , 'abstracts/_mixins' , 'base/_reset';
+
 header{
     position: sticky;
     top: 0;
@@ -30,7 +31,7 @@ header{
 
     @include flex(column, nowrap, center, center);
     gap: 45px;
-    height: 80vh;
+    height: 90vh;
 
     &__text{
         @include flex(column, nowrap, center, center);
@@ -73,6 +74,7 @@ header{
 
 .info{
     @include flex(column, nowrap, center,center);
+    gap: 45px;
     &__text{
         @include flex(column, nowrap, center,center);
         gap: 15px;
@@ -93,5 +95,19 @@ header{
     }
     &__p{
         max-width: 85%;
+    }
+}
+
+
+.glide{
+    height: 190px;
+    &__track{
+        height: 190px;
+    }
+    &__slide{
+        @include flex(row,nowrap, center,center)
+    }
+    &__img{
+        height: 190px;
     }
 }

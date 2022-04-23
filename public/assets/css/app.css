@@ -234,7 +234,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   gap: 45px;
-  height: 80vh;
+  height: 90vh;
 }
 
 .inicio__text {
@@ -318,6 +318,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 45px;
 }
 
 .info__text {
@@ -354,5 +355,33 @@ header {
 
 .info__p {
   max-width: 85%;
+}
+
+.glide {
+  height: 190px;
+}
+
+.glide__track {
+  height: 190px;
+}
+
+.glide__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.glide__img {
+  height: 190px;
 }
 /*# sourceMappingURL=app.css.map */
