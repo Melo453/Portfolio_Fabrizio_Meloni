@@ -123,7 +123,6 @@ q:after {
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
 form,
-input,
 textarea,
 select,
 button,
@@ -179,10 +178,11 @@ body {
 }
 
 header {
+  width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .header {
@@ -203,7 +203,31 @@ header {
 }
 
 .header__ul {
+  position: fixed;
+  width: 100%;
+  height: 30vh;
+  background-color: var(--color-terciario);
+  top: -100%;
+  text-align: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  z-index: 100;
+}
+
+.header__li--a {
+  font-size: 1.1rem;
+}
+
+.header__ul.show {
+  top: 70px;
+}
+
+.header__hidden {
   display: none;
+}
+
+.header__nohidden {
+  display: inline-block;
 }
 
 .header__a {
@@ -233,8 +257,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 45px;
   gap: 45px;
-  height: 90vh;
+  min-height: 70vh;
 }
 
 .inicio__text {
@@ -253,11 +278,11 @@ header {
           align-items: center;
   position: relative;
   padding-left: 29px;
-  gap: 15px;
+  gap: 20px;
 }
 
 .inicio__h2 span, .inicio__h2, .inicio__h1 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .inicio__h2 span {
@@ -318,6 +343,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5.625rem 0;
   gap: 45px;
 }
 
@@ -357,15 +383,197 @@ header {
   max-width: 85%;
 }
 
-.glide {
-  height: 190px;
+.portfolio {
+  padding: 5.625rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.glide__track {
-  height: 190px;
+.portfolio__h2 {
+  font-size: 1.5rem;
+  position: relative;
 }
 
-.glide__slide {
+.portfolio__h2::before {
+  content: '';
+  background-color: var(--color-cuaternario);
+  width: 70px;
+  position: absolute;
+  height: 4px;
+  bottom: -5px;
+  left: 15px;
+}
+
+.portfolio__grid {
+  display: -ms-grid;
+  display: grid;
+  max-width: 270px;
+  margin-top: 35px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.portfolio__card {
+  height: 350px;
+  gap: 1rem;
+  background-color: var(--color-terciario);
+}
+
+.portfolio__img {
+  height: 220px;
+}
+
+.portfolio__title {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.portfolio__links {
+  text-align: center;
+}
+
+.portfolio__i {
+  font-size: 1.2rem;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 35px;
+  padding: 5.625rem 0;
+}
+
+.contact__h2 {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.contact__h2::before {
+  content: '';
+  background-color: var(--color-cuaternario);
+  width: 70px;
+  position: absolute;
+  height: 4px;
+  bottom: -5px;
+  left: 15px;
+}
+
+.contact__phone, .contact__email {
+  text-align: center;
+  position: relative;
+}
+
+.contact__p {
+  margin-top: 15px;
+  font-size: .9rem;
+}
+
+.contact__name, .contact__mail {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  border-bottom: 1px solid var(--color-quinario);
+  text-align: center;
+  width: 85%;
+  background: transparent;
+  color: var(--color-secundario);
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  gap: 25px;
+}
+
+.contact__h2--msg {
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.contact__h2--msg::before {
+  content: '';
+  background-color: var(--color-cuaternario);
+  width: 80%;
+  position: absolute;
+  height: 4px;
+  bottom: -10px;
+  left: 15px;
+}
+
+.contact__msg {
+  height: 200px;
+  padding: 1.5em;
+  border: 1px solid var(--color-quinario);
+  width: 85%;
+}
+
+.contact__btn {
+  text-transform: uppercase;
+  padding: .4rem 1rem;
+  border-radius: 1.25rem;
+  background-color: var(--color-quinario);
+  color: var(--color-primario);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-quinario);
+  padding: 15px 0;
+  gap: 8px;
+  color: var(--color-terciario);
+}
+
+.footer__h2 {
+  font-size: 1.4rem;
+}
+
+.footer__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,9 +587,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 35px;
 }
 
-.glide__img {
-  height: 190px;
+.footer__p span {
+  color: red;
 }
 /*# sourceMappingURL=app.css.map */
