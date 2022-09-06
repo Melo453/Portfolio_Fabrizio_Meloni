@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    --color-primario: #303036;
+    --color-secundario: #FFFAFF;
+    --color-terciario: #050401;
+    --color-cuaternario: #f86b4f;
+    --color-quinario: #00ADB5;
+
+  /* Tipografía */
+    --tipo-principal: 'Roboto', sans-serif;
+
+}
+
+/* Las adaptamos al modo oscuro 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primario: #303036;
+        --color-secundario: #FFFAFF;
+        ;
+    }
+}
+
+
+
+@media (prefers-contrast: high) {
+    :root {
+        --color-primario: black;
+        --color-secundario: white;
+    }
+} */
