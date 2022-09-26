@@ -14,6 +14,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +36,7 @@
             <nav class="navigation--mobile__nav">
                 <ul class="desocultar">
                     <li class="navigation--mobile__list active">
-                        <a href="inicio">
+                        <a href="#inicio">
                             <span class="icon">
                                 <ion-icon name="home-outline"></ion-icon>
                             </span>
@@ -80,10 +82,10 @@
     </header>
     <main>
         <div class="navigation">
-            <a href="#inicio" class="navigation__a aparecer"> fm</a>
+            <a href="#inicio" class="navigation__a aparecer" > fm</a>
             <nav class="navigation__nav expandir ">
                 <ul class="desocultar">
-                    <li class="navigation__list active">
+                    <li class="navigation__list active" >
                         <a href="#inicio">
                             <span class="icon">
                                 <ion-icon name="home-outline"></ion-icon>
@@ -134,13 +136,13 @@
         <section id="inicio" class="inicio">
             <div id="particles-js">
             </div>
-            <div class="inicio__text">
+            <div class="inicio__text" data-aos="fade-right">
                 <h1 class="inicio__h2"> <span> Fabrizio </span> Meloni</h1>
                 <div class="inicio__container">
                     <span class="text inicio__move"></span>
                 </div>
 
-                <div class="inicio__text--icons">
+                <div class="inicio__text--icons" data-aos="flip-down">
                     <a class="inicio__a" title="Linkedin" href="https://www.linkedin.com/in/fabrizio-meloni-4126711b7/"
                         target="_blank">
                         <i class="inicio__i fab fa-linkedin-in"></i>
@@ -154,13 +156,13 @@
                     </a>
                 </div>
             </div>
-            <img class="inicio__img" src="/assets/img/principal.png" alt="Foto fabri">
+            <img class="inicio__img" src="/assets/img/principal.png" alt="Foto fabri" data-aos="fade-left">
 
         </section>
         <hr style="height:.1px; background: #32353c;">
         <section id="info" class="info">
 
-            <div class="info__text">
+            <div class="info__text" data-aos="fade-right">
                 <h2 class="info__h2">About Us</h2>
                 <p class="info__p">
                     Hello! My name is Fabrizio. I am a young software developer who loves exercising, programming and
@@ -168,7 +170,7 @@
                     Love working with huge code structures!
                 </p>
             </div>
-            <div class="info__skill">
+            <div class="info__skill" data-aos="fade-left">
                 <h2 class="info__h2--skill">Skills</h2>
                 <div class="info__skills">
                     <div class="info__skills--container">
@@ -221,9 +223,9 @@
         </section>
         <hr class="hr" style="height:.1px; background: #32353c;">
         <section id="portfolio" class="portfolio">
-            <h2 class="portfolio__h2">My Portfolio</h2>
+            <h2 data-aos="fade-down" class="portfolio__h2">My Portfolio</h2>
             <div class="portfolio__grid">
-                <div class="portfolio__card">
+                <div class="portfolio__card" data-aos="fade-up-right">
                     <img src="/assets/img/2-original.png" alt="xd" class="portfolio__img">
                     <h3 class="portfolio__title">
                         (Project description)
@@ -237,7 +239,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="portfolio__card">
+                <div class="portfolio__card" data-aos="flip-down">
                     <img src="/assets/img/2-original.png" alt="xd" class="portfolio__img">
                     <h3 class="portfolio__title">
                         (Project description)
@@ -251,7 +253,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="portfolio__card">
+                <div class="portfolio__card" data-aos="fade-up-left">
                     <img src="/assets/img/2-original.png" alt="xd" class="portfolio__img">
                     <h3 class="portfolio__title">
                         (Project description)
@@ -269,8 +271,8 @@
         </section>
         <hr class="hr" style="height:.1px; background: #32353c;">
         <section id="contact" class="contact">
-            
-            <div class="contact__data">
+            <h2 class="contact__h2--title">Contact With Me</h2>
+            <div class="contact__data" data-aos="flip-left">
                 <h2 class="contact__h2">Get in Touch</h2>
                 <img src="/assets/img/contact.png" alt="Contact" class="contact__img">
                 <div class="contact__phone">
@@ -291,7 +293,7 @@
             </div>
 
             
-            <div class="contact__message">
+            <div class="contact__message" data-aos="flip-right">
                 <h2 class="contact__h2--msg"> Send me a message...</h2>
                 <form class="contact__form" action="/send-email" method="POST">
                     <input class="contact__name" type="text" name="name" placeholder="Your name">
@@ -311,6 +313,7 @@
     <script src="https://kit.fontawesome.com/f3b01aeff0.js" crossorigin="anonymous"></script>
     <script src="/assets/js/index.js"></script>
     <script src="/assets/js/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         particlesJS({
             "particles": {
@@ -422,6 +425,11 @@
             },
             "retina_detect": true
         })
+    </script>
+    <script>
+        AOS.init({
+            duration:1000
+        });
     </script>
 </body>
 

@@ -43,3 +43,17 @@ function animateBars() {
 
     menu.classList.toggle("active__menu")
 };
+
+const menuLinks = document.querySelectorAll('.navigation--mobile__list a[href^="#"]');
+
+menuLinks.forEach(menuLinks =>{
+    menuLinks.addEventListener("click", function(){
+
+        line1.classList.remove("activemenu__bars1");
+    line2.classList.remove("activemenu__bars2");
+    line3.classList.remove("activemenu__bars3");
+
+        menu.classList.remove("active__menu");
+    });
+
+});

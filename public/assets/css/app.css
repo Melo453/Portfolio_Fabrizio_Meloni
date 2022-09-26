@@ -208,8 +208,8 @@ header {
 }
 
 .activemenu__bars1 {
-  -webkit-transform: rotate(45deg) translate(-2px, 1px);
-          transform: rotate(45deg) translate(-2px, 1px);
+  -webkit-transform: rotate(45deg) translate(0px, -2px);
+          transform: rotate(45deg) translate(0px, -2px);
 }
 
 .activemenu__bars2 {
@@ -218,8 +218,8 @@ header {
 }
 
 .activemenu__bars3 {
-  -webkit-transform: rotate(-45deg) translate(-4px, 2px);
-          transform: rotate(-45deg) translate(-4px, 2px);
+  -webkit-transform: rotate(-45deg) translate(-1px, 4px);
+          transform: rotate(-45deg) translate(-1px, 4px);
 }
 
 .navigation--mobile {
@@ -572,7 +572,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5.625rem 0;
+  padding: 10rem 0;
   gap: 45px;
 }
 .info__text {
@@ -655,8 +655,9 @@ header {
 }
 
 .portfolio {
+  gap: 8rem;
   overflow: hidden;
-  padding: 5.625rem 0;
+  padding: 10rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,16 +673,16 @@ header {
           align-items: center;
 }
 .portfolio__h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   position: relative;
 }
 .portfolio__h2::before {
   content: "";
   background-color: var(--color-cuaternario);
-  width: 107px;
+  width: 147px;
   position: absolute;
   height: 4px;
-  bottom: -5px;
+  bottom: -8px;
   left: 15px;
 }
 .portfolio__grid {
@@ -740,7 +741,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   gap: 35px;
-  padding: 5.625rem 0;
+  padding: 10rem 0;
 }
 .contact__data, .contact__message {
   display: -webkit-box;
@@ -1145,11 +1146,11 @@ header {
   .info__h2::before {
     content: "";
     background-color: var(--color-cuaternario);
-    width: 135px;
+    width: 130px;
     position: absolute;
     height: 4px;
     bottom: -5px;
-    left: 15px;
+    left: 8px;
   }
   .info__h2--skill::before {
     content: "";
@@ -1170,6 +1171,7 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    position: relative;
   }
   .contact__img {
     top: -15px;
@@ -1183,6 +1185,20 @@ header {
   }
   .contact__h2 {
     top: -32px;
+  }
+  .contact__h2--title {
+    position: absolute;
+    top: 50px;
+    font-size: 2rem;
+  }
+  .contact__h2--title::before {
+    content: "";
+    background-color: var(--color-cuaternario);
+    width: 217px;
+    position: absolute;
+    height: 4px;
+    bottom: -2.9px;
+    left: 11px;
   }
 }
 @media screen and (min-width: 1000px) {

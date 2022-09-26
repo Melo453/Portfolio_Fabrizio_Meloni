@@ -30,7 +30,7 @@ header{
     transform-origin: 0px 100%;
 }
 .activemenu__bars1{
-    transform: rotate(45deg) translate(-2px, 1px);
+    transform: rotate(45deg) translate(0px, -2px);
 }
 
 .activemenu__bars2{
@@ -39,7 +39,7 @@ header{
 }
 
 .activemenu__bars3{
-    transform: rotate(-45deg) translate(-4px, 2px);
+    transform: rotate(-45deg) translate(-1px, 4px);
 }
 .navigation--mobile{
     overflow: hidden;
@@ -296,7 +296,7 @@ header{
 .info{
     overflow: hidden;
     @include flex(column, nowrap, center, center);
-    padding: 5.625rem 0;
+    padding: 10rem 0;
     gap: 45px;
     &__text{
         @include flex(column, nowrap, center, center);
@@ -363,22 +363,22 @@ header{
 }
 
 .portfolio{
-    
+    gap:8rem;
     overflow: hidden;
-    padding: 5.625rem 0;
+    padding: 10rem 0;
     @include flex(column, nowrap, center, center);
     &__h2{
-        font-size: 1.5rem;
+        font-size: 2rem;
         position: relative;
         
     }
     &__h2::before{
         content: '';
         background-color: var(--color-cuaternario);
-        width: 107px;
+        width: 147px;
         position: absolute;
         height: 4px;
-        bottom: -5px;
+        bottom: -8px;
         left: 15px;
     }
     &__grid{
@@ -426,7 +426,7 @@ header{
     overflow: hidden;
     @include flex(column, nowrap, center, center);
     gap: 35px;
-    padding: 5.625rem 0;
+    padding: 10rem 0;
     &__data,
     &__message{
         @include flex(column,nowrap,center,center);
@@ -781,11 +781,11 @@ header{
         &__h2::before{
             content: '';
             background-color: var(--color-cuaternario);
-            width: 135px;
+            width: 130px;
             position: absolute;
             height: 4px;
             bottom: -5px;
-            left: 15px;
+            left: 8px;
         }
 
         &__h2--skill::before{
@@ -807,6 +807,7 @@ header{
     }
     .contact{
         flex-direction: row;
+        position: relative;
         &__img{
             top: -15px;
             display: block;
@@ -820,6 +821,20 @@ header{
         }
         &__h2{
             top: -32px;
+        }
+        &__h2--title{
+            position: absolute;
+            top: 50px;
+            font-size: 2rem;
+        }
+        &__h2--title::before{
+            content: '';
+            background-color: var(--color-cuaternario);
+            width: 217px;
+            position: absolute;
+            height: 4px;
+            bottom: -2.9px;
+            left: 11px;
         }
     }
 }
