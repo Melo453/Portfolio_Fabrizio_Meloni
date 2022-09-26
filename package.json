@@ -4,13 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-<<<<<<< HEAD
     "dev": "nodemon app.js",
     "start": "node app.js",
-=======
-    "dev": "nodemon src/app.js",
-    "start": "node src/app.js",
->>>>>>> 978b073ceabfa18ddefae08d8ea37cc4fff46a00
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
