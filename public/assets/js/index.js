@@ -5,9 +5,9 @@ function activeLink(){
     this.classList.add('active');
 }
 
-list.forEach((item) => item.addEventListener('click', function(event){
-    event.preventDefault();
-}));
+// list.forEach((item) => item.addEventListener('click', function(event){
+//     event.preventDefault();
+// }));
 
 list.forEach((item) => item.addEventListener('click', activeLink));
 
