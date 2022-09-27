@@ -16,6 +16,7 @@
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -85,23 +86,23 @@
             <a href="#inicio" class="navigation__a aparecer" > fm</a>
             <nav class="navigation__nav expandir ">
                 <ul class="desocultar">
-                    <li class="navigation__list active" >
-                        <a href="#inicio">
+                    <li class="navigation__list " >
+                        <a href="#home">
                             <span class="icon">
                                 <ion-icon name="home-outline"></ion-icon>
                             </span>
                             <span class="text mostrar">Home</span>
                         </a>
                     </li>
-                    <li class="navigation__list" >
-                        <a class="navigation__a--icons" href="#info" >
+                    <li class="navigation__list " >
+                        <a class="navigation__a--icons" href="#about" >
                             <span class="icon">
                                 <ion-icon name="person-outline"></ion-icon>
                             </span>
                             <span class="text mostrar">About</span>
                         </a>
                     </li>
-                    <li class="navigation__list">
+                    <li class="navigation__list ">
                         <a href="#portfolio">
                             <span class="icon">
                                 <ion-icon name="folder-outline"></ion-icon>
@@ -109,7 +110,7 @@
                             <span class="text mostrar">Portfolio</span>
                         </a>
                     </li>
-                    <li class="navigation__list">
+                    <li class="navigation__list ">
                         <a href="#contact">
                             <span class="icon">
                                 <ion-icon name="call-outline"></ion-icon>
@@ -133,7 +134,7 @@
                 <p class="navigation__p--footer">Made with <span>❤</span> in Argentina</p>
             </div>
         </div>
-        <section id="inicio" class="inicio">
+        <section id="home" class="inicio">
             <div id="particles-js">
             </div>
             <div class="inicio__text" data-aos="fade-right">
@@ -160,10 +161,10 @@
 
         </section>
         <hr style="height:.1px; background: #32353c;">
-        <section id="info" class="info">
+        <section id="about" class="info">
 
             <div class="info__text" data-aos="fade-right">
-                <h2 class="info__h2">About Us</h2>
+                <h2 class="info__h2" data-aos="fade-down-right">About Us</h2>
                 <p class="info__p">
                     Hello! My name is Fabrizio. I am a young software developer who loves exercising, programming and
                     learning about technology. Although I enjoy backend and frontend, I prefer programming with backend.
@@ -171,7 +172,7 @@
                 </p>
             </div>
             <div class="info__skill" data-aos="fade-left">
-                <h2 class="info__h2--skill">Skills</h2>
+                <h2 class="info__h2--skill" data-aos="fade-down-left">Skills</h2>
                 <div class="info__skills">
                     <div class="info__skills--container">
                         <details>
@@ -271,7 +272,7 @@
         </section>
         <hr class="hr" style="height:.1px; background: #32353c;">
         <section id="contact" class="contact">
-            <h2 class="contact__h2--title">Contact With Me</h2>
+            <h2 class="contact__h2--title" data-aos="fade-down">Contact With Me</h2>
             <div class="contact__data" data-aos="flip-left">
                 <h2 class="contact__h2">Get in Touch</h2>
                 <img src="/assets/img/contact.png" alt="Contact" class="contact__img">
@@ -304,7 +305,9 @@
             </div>
 
         </section>
-
+        <a href="#" class="scrollup" id="scroll-up" data-aos="fade-left">
+            <i class="fas fa-arrow-up scrollup__icon"></i>
+        </a>
     </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

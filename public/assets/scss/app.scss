@@ -1,5 +1,9 @@
 @import 'abstracts/_variables' , 'abstracts/_mixins' , 'base/_reset';
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     overflow: hidden;
     width: 100%;
@@ -41,6 +45,7 @@ header{
 .activemenu__bars3{
     transform: rotate(-45deg) translate(-1px, 4px);
 }
+
 .navigation--mobile{
     overflow: hidden;
     @include flex(row, nowrap,space-around,center);
@@ -423,10 +428,25 @@ header{
 }
 
 .contact{
+    position: relative;
     overflow: hidden;
     @include flex(column, nowrap, center, center);
     gap: 35px;
     padding: 10rem 0;
+    &__h2--title{
+        position: absolute;
+        top: 50px;
+        font-size: 1.5rem;
+    }
+    &__h2--title::before{
+        content: '';
+        background-color: var(--color-cuaternario);
+        width: 158px;
+        position: absolute;
+        height: 4px;
+        bottom: -2.9px;
+        left: 11px;
+    }
     &__data,
     &__message{
         @include flex(column,nowrap,center,center);
@@ -532,6 +552,44 @@ header{
         inset -4px -7px 4px #16171a;
         color: var(--color-cuaternario);
     }
+}
+
+.scrollup{
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: transparent;
+    opacity: .8;
+    padding: .3rem .5rem;
+    border-radius: .4rem;
+    z-index: 100;
+    color: var(--color-secundario);
+    transition: all .3s ease-in-out;
+    box-shadow:  8px 8px 4px #1c1e22, 
+    -2px -5px 4px #262a2e;
+    transition: all 1 ease;
+}
+
+
+.scrollup:hover{
+    box-shadow:  6px 8px 4px #262a2e, 
+    -2px -5px 4px #1c1e22;
+    color: var(--color-cuaternario);
+    
+}
+.scrollup:active{
+    box-shadow: inset 6px 8px 4px #262a2e, 
+    inset -2px -5px 4px #1c1e22;
+    color: var(--color-cuaternario);
+}
+.scrollup__icon{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.show-scroll{
+    bottom: 5rem;
 }
 
 @media screen and (max-width:258px){
