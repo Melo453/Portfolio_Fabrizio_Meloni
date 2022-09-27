@@ -696,7 +696,7 @@ header{
 
     .info{
         @include flex(row, nowrap, center, center);
-
+        gap: 35px;
         &__text {
             position: relative;
             top: -34px;
@@ -742,6 +742,11 @@ header{
             padding-right: 25px;
             grid-template-columns: 1fr 1fr;
         }
+        &__skills--container {
+            width: 115px;
+            
+        }
+
         &__skills--container details{
             margin-bottom: 1rem;
             
@@ -830,7 +835,7 @@ header{
     }
     .info{
         justify-content: space-around;
-        
+        gap: 50px;
         &__h2,
         &__h2--skill{
             font-size: 2.3rem;
@@ -863,7 +868,9 @@ header{
             bottom: -2.9px;
             left: 11px;
         }
-
+        &__skills--container{
+            width: unset;
+        }
         &__skills--container details{
             margin-bottom: 1rem;
             
