@@ -275,7 +275,7 @@ header{
         box-shadow:  8px 8px 4px #1c1e22, 
         -2px -5px 4px #262a2e;
         transition: all 1 ease;
-        z-index: 2;
+        z-index: 1000;
     }
     &__a:hover{
         box-shadow:  6px 8px 4px #262a2e, 
@@ -565,7 +565,6 @@ header{
     border-radius: .4rem;
     z-index: 100;
     color: var(--color-secundario);
-    transition: all .3s ease-in-out;
     box-shadow:  8px 8px 4px #1c1e22, 
     -2px -5px 4px #262a2e;
     transition: all 1 ease;

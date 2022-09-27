@@ -66,16 +66,4 @@ function scrollUp() {
 window.addEventListener('scroll', scrollUp);
 
 
-$(document).ready(function() {
-    var ir_a = $(".inicio");
 
-    ir_a.click(function(event){ 
-        event.preventDefault();
-        $("body, html").animate(
-            {
-                scrollTop: $(this.hash).offset().top,
-            }, 700
-
-        );
-    });
-});
