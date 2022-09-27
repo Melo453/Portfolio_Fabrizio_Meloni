@@ -19,7 +19,7 @@ const textLoad = () =>{
     },0);
     setTimeout(() =>{
         text.textContent = "Freelancer";
-    },4000);
+    },4015);
     setTimeout(() =>{
         text.textContent = "Certified tech developer";
     },8000);
