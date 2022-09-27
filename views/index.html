@@ -296,11 +296,11 @@
             
             <div class="contact__message" data-aos="flip-right">
                 <h2 class="contact__h2--msg"> Send me a message...</h2>
-                <form class="contact__form" action="/send-email" method="POST">
-                    <input class="contact__name" type="text" name="name" placeholder="Your name">
-                    <input class="contact__mail" type="email" name="email" placeholder="Your email">
-                    <textarea class="contact__msg" name="message" placeholder="Your message..."></textarea>
-                    <button type="submit" class="contact__btn">Send message</button>
+                <form name="form" class="contact__form" action="/send-email" method="POST">
+                    <input class="contact__name" type="text" name="name" placeholder="Your name" required>
+                    <input class="contact__mail" type="email" name="email" placeholder="Your email" required>
+                    <textarea class="contact__msg" name="message" placeholder="Your message..." required></textarea>
+                    <button type="submit" id="botton" class="contact__btn">Send message</button>
                 </form>
             </div>
 
@@ -314,9 +314,12 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <script src="https://kit.fontawesome.com/f3b01aeff0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/assets/js/index-dist.js"></script>
+    <script src="/assets/js/sweetAlert.js"></script>
     <script src="/assets/js/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
         particlesJS({
             "particles": {

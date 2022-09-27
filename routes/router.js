@@ -37,7 +37,6 @@ router.post('/send-email',async (req,res) =>{
         subject: 'Website contact form',
         html: contentHTML
     });
-    
     res.redirect('/#contact');
 });
 
