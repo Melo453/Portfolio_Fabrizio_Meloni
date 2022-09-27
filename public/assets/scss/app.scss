@@ -416,15 +416,24 @@ header{
     &__title{
         text-align: center;
         margin: 25px 0;
+        
     }
     &__links{
+        
         text-align: center;
     }
     &__i{
         font-size: 1rem;
-        
+        padding-right: 15px;
     }
 
+}
+
+.fas,
+.fa,
+.fab,
+.far{
+    font-weight: 600 !important;
 }
 
 .contactt{
