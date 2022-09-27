@@ -80,7 +80,7 @@ window.addEventListener('scroll', () =>{
         }
     })
     navLi.forEach(li => {
-        console.log(current)
+        
         li.classList.remove('active');
         if (li.classList.contains(current)) {
             
