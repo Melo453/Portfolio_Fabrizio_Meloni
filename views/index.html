@@ -86,7 +86,7 @@
             <a href="#inicio" class="navigation__a aparecer" > fm</a>
             <nav class="navigation__nav expandir ">
                 <ul class="desocultar">
-                    <li class="navigation__list " >
+                    <li title="Home" class="navigation__list home active" >
                         <a href="#home">
                             <span class="icon">
                                 <ion-icon name="home-outline"></ion-icon>
@@ -94,7 +94,7 @@
                             <span class="text mostrar">Home</span>
                         </a>
                     </li>
-                    <li class="navigation__list " >
+                    <li title="About" class="navigation__list about" >
                         <a class="navigation__a--icons" href="#about" >
                             <span class="icon">
                                 <ion-icon name="person-outline"></ion-icon>
@@ -102,7 +102,7 @@
                             <span class="text mostrar">About</span>
                         </a>
                     </li>
-                    <li class="navigation__list ">
+                    <li title="Portfolio" class="navigation__list portfolio">
                         <a href="#portfolio">
                             <span class="icon">
                                 <ion-icon name="folder-outline"></ion-icon>
@@ -110,7 +110,7 @@
                             <span class="text mostrar">Portfolio</span>
                         </a>
                     </li>
-                    <li class="navigation__list ">
+                    <li title="Contact" class="navigation__list contact">
                         <a href="#contact">
                             <span class="icon">
                                 <ion-icon name="call-outline"></ion-icon>
@@ -223,15 +223,15 @@
             </div>
         </section>
         <hr class="hr" style="height:.1px; background: #32353c;">
-        <section id="portfolio" class="portfolio">
-            <h2 data-aos="fade-down" class="portfolio__h2">My Portfolio</h2>
-            <div class="portfolio__grid">
-                <div class="portfolio__card" data-aos="fade-up-right">
+        <section id="portfolio" class="portfolioo">
+            <h2 data-aos="fade-down" class="portfolioo__h2">My Portfolio</h2>
+            <div class="portfolioo__grid">
+                <div class="portfolioo__card" data-aos="fade-up-right">
                     <img src="/assets/img/2-original.png" alt="xd" class="portfolio__img">
-                    <h3 class="portfolio__title">
+                    <h3 class="portfolioo__title">
                         (Project description)
                     </h3>
-                    <div class="portfolio__links">
+                    <div class="portfolioo__links">
                         <a href="">
                             <i class="portfolio__i fab fa-github"> Repository</i>
                         </a>
@@ -240,67 +240,67 @@
                         </a>
                     </div>
                 </div>
-                <div class="portfolio__card" data-aos="flip-down">
+                <div class="portfolioo__card" data-aos="flip-down">
                     <img src="/assets/img/2-original.png" alt="xd" class="portfolio__img">
-                    <h3 class="portfolio__title">
+                    <h3 class="portfolioo__title">
                         (Project description)
                     </h3>
-                    <div class="portfolio__links">
+                    <div class="portfolioo__links">
                         <a href="">
-                            <i class="portfolio__i fab fa-github"> Repository</i>
+                            <i class="portfolioo__i fab fa-github"> Repository</i>
                         </a>
                         <a href="">
-                            <i class="portfolio__i fas fa-globe-americas"> Page</i>
+                            <i class="portfolioo__i fas fa-globe-americas"> Page</i>
                         </a>
                     </div>
                 </div>
-                <div class="portfolio__card" data-aos="fade-up-left">
+                <div class="portfolioo__card" data-aos="fade-up-left">
                     <img src="/assets/img/2-original.png" alt="xd" class="portfolio__img">
-                    <h3 class="portfolio__title">
+                    <h3 class="portfolioo__title">
                         (Project description)
                     </h3>
-                    <div class="portfolio__links">
+                    <div class="portfolioo__links">
                         <a href="">
-                            <i class="portfolio__i fab fa-github"> Repository</i>
+                            <i class="portfolioo__i fab fa-github"> Repository</i>
                         </a>
                         <a href="">
-                            <i class="portfolio__i fas fa-globe-americas"> Page</i>
+                            <i class="portfolioo__i fas fa-globe-americas"> Page</i>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
         <hr class="hr" style="height:.1px; background: #32353c;">
-        <section id="contact" class="contact">
-            <h2 class="contact__h2--title" data-aos="fade-down">Contact With Me</h2>
-            <div class="contact__data" data-aos="flip-left">
-                <h2 class="contact__h2">Get in Touch</h2>
-                <img src="/assets/img/contact.png" alt="Contact" class="contact__img">
-                <div class="contact__phone">
+        <section id="contact" class="contactt">
+            <h2 class="contactt__h2--title" data-aos="fade-down">Contact With Me</h2>
+            <div class="contactt__data" data-aos="flip-left">
+                <h2 class="contactt__h2">Get in Touch</h2>
+                <img src="/assets/img/contact.png" alt="Contact" class="contactt__img">
+                <div class="contactt__phone">
                     <a href="">
                         <i class="fas fa-phone">
                             Phone
                         </i>
                     </a>
-                    <p class="contact__p">+54 351-2623900</p>
+                    <p class="contactt__p">+54 351-2623900</p>
                 </div>
-                <p class="contact__separation"></p>
-                <div class="contact__email">
+                <p class="contactt__separation"></p>
+                <div class="contactt__email">
                     <a href="">
                         <i class="fas fa-envelope"> Email</i>
                     </a>
-                    <p class="contact__p">fabrimeloni1@gmail.com</p>
+                    <p class="contactt__p">fabrimeloni1@gmail.com</p>
                 </div>
             </div>
 
             
-            <div class="contact__message" data-aos="flip-right">
-                <h2 class="contact__h2--msg"> Send me a message...</h2>
-                <form name="form" class="contact__form" action="/send-email" method="POST">
-                    <input class="contact__name" type="text" name="name" placeholder="Your name" required>
-                    <input class="contact__mail" type="email" name="email" placeholder="Your email" required>
-                    <textarea class="contact__msg" name="message" placeholder="Your message..." required></textarea>
-                    <button type="submit" id="botton" class="contact__btn">Send message</button>
+            <div class="contactt__message" data-aos="flip-right">
+                <h2 class="contactt__h2--msg"> Send me a message...</h2>
+                <form name="form" class="contactt__form" action="/send-email" method="POST">
+                    <input class="contactt__name" type="text" name="name" placeholder="Your name" required>
+                    <input class="contactt__mail" type="email" name="email" placeholder="Your email" required>
+                    <textarea class="contactt__msg" name="message" placeholder="Your message..." required></textarea>
+                    <button type="submit" id="botton" class="contactt__btn">Send message</button>
                 </form>
             </div>
 

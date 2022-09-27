@@ -367,7 +367,7 @@ header{
     }
 }
 
-.portfolio{
+.portfolioo{
     gap:8rem;
     overflow: hidden;
     padding: 10rem 0;
@@ -427,7 +427,7 @@ header{
 
 }
 
-.contact{
+.contactt{
     position: relative;
     overflow: hidden;
     @include flex(column, nowrap, center, center);
@@ -770,7 +770,7 @@ header{
         }
     }
 
-    .portfolio{
+    .portfolioo{
         &__grid{
             display: grid;
             min-width: 270px;
@@ -862,7 +862,7 @@ header{
             
         }
     }
-    .contact{
+    .contactt{
         flex-direction: row;
         position: relative;
         &__img{
@@ -1086,11 +1086,11 @@ header{
         // gap: 90px;
         
     }
-    .portfolio{
+    .portfolioo{
         padding-left: 150px;
     }
 
-    .contact{
+    .contactt{
         
         justify-content: space-around;
         padding-left: 150px;
@@ -1119,7 +1119,7 @@ header{
 
     }
 
-    .portfolio{
+    .portfolioo{
         &__grid{
             grid-template-columns: 1fr 1fr 1fr;
             gap: 4rem;
@@ -1127,7 +1127,7 @@ header{
 
     }
 
-    .contact{
+    .contactt{
         
         justify-content: space-around;
         padding-left: 150px;

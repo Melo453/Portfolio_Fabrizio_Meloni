@@ -7,25 +7,44 @@
     --color-cuaternario: #de5d00;
     --color-quinario: #00ADB5;
 
-  /* Tipografía */
+    /* Tipografía */
     --tipo-principal: 'Roboto', sans-serif;
 
 }
 
-/* Las adaptamos al modo oscuro 
 @media (prefers-color-scheme: dark) {
     :root {
         --color-primario: #303036;
         --color-secundario: #FFFAFF;
-        ;
+        --color-terciario: #202226;
+        --color-cuaternario: #de5d00;
+        --color-quinario: #00ADB5;
+
+        /* Tipografía */
+        --tipo-principal: 'Roboto', sans-serif;
     }
 }
 
-
-
+/* Opcional */
+/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
 @media (prefers-contrast: high) {
     :root {
-        --color-primario: black;
-        --color-secundario: white;
+        --color-primario: #303036;
+        --color-secundario: #FFFAFF;
+        --color-terciario: #202226;
+        --color-cuaternario: #de5d00;
+        --color-quinario: #00ADB5;
+
+        /* Tipografía */
+        --tipo-principal: 'Roboto', sans-serif;
     }
-} */
+}
+
+/* Opcional */
+/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none;
+        transition: none;
+    }
+}
