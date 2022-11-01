@@ -544,6 +544,7 @@ header{
         inset -2px -5px 4px #262a2e;
     }
     &__btn{
+        cursor: pointer;
         text-transform: uppercase;
         padding: .4rem 1rem;
         border-radius: 1.25rem;
