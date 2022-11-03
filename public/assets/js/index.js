@@ -19,15 +19,13 @@ const textLoad = () =>{
     },0);
     setTimeout(() =>{
         text.textContent = "Freelancer";
-    },4015);
-    setTimeout(() =>{
-        text.textContent = "Certified tech developer";
-    },8000);
+    },4000);
+    
 };
 
 
 textLoad();
-setInterval(textLoad,12000);
+setInterval(textLoad,8000);
 
 document.querySelector(".menu--mobile").addEventListener("click", animateBars);
 

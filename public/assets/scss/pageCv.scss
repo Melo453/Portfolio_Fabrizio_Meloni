@@ -1,0 +1,46 @@
+@import 'abstracts/_variables' , 'abstracts/_mixins' , 'base/_reset';
+
+header{
+    padding: 1.5rem 0;
+    overflow: hidden;
+    width: 100%;
+    background: var(--color-terciario);
+    box-shadow:  .5rem .5rem .8rem #1c1e22;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu{
+    @include flex(row, nowrap,space-around,center);
+
+    &__items{
+        @include flex(row, nowrap,space-around,center);
+    }
+
+    &__a{
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    &__a span{
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-cuaternario);
+    }
+
+    ul li a .icon{
+        position: relative;
+        display: block;
+        // line-height: 75px;
+        font-size: 2em;
+        text-align: center;
+        transition:  .5s;
+        color: var(--color-secundario);
+    }
+}
+
+#container{
+    height: 80vh;
+}
