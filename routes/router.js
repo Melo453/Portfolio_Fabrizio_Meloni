@@ -6,9 +6,6 @@ const router = express.Router();
 
 router.get('/', vistaPrincipal)
 
-router.get('/curriculum', vistaCV)
-
-
 router.post('/send-email',async (req,res) =>{
     const { name, email, message } = req.body;
     
