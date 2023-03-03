@@ -11,22 +11,6 @@ function activeLink(){
 
 list.forEach((item) => item.addEventListener('click', activeLink));
 
-
-const text = document.querySelector(".inicio__move");
-const textLoad = () =>{
-    setTimeout(() =>{
-        text.textContent = "Web developer";
-    },0);
-    setTimeout(() =>{
-        text.textContent = "Freelancer";
-    },4000);
-    
-};
-
-
-textLoad();
-setInterval(textLoad,8000);
-
 document.querySelector(".menu--mobile").addEventListener("click", animateBars);
 
 var line1 = document.querySelector(".menu__bars1");

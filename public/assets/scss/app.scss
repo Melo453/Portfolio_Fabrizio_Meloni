@@ -23,6 +23,10 @@ header{
 
 }
 
+.typed-cursor{
+    color: var(--color-cuaternario);
+}
+
 .menu--mobile span{
     overflow: hidden;
     display: block;
@@ -185,10 +189,6 @@ header{
     &__letras{
         @include flex(row,nowrap,center,center);
     }
-    &__container{
-        width: 400px;
-        overflow: hidden;
-    }
     &__dynamic{
         margin-left: 15px;
         height: 90px;
@@ -240,24 +240,13 @@ header{
         position: relative;
         gap: 30px;
     }
-    .text{
+    .move{
         position: relative;
-        
-    }
-    &__move{
         font-size: 1.3rem;
-        left: 90px;
     }
-    &__move::before{
-        content:"";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: var(--color-terciario);
-        border-left: 2px solid var(--color-cuaternario);    
-        animation: animate 4s steps(12) infinite;
+    .move span{
+        position: relative;
+        font-size: 1.3rem;
     }
     &__i{
         font-size: 1.2rem;
@@ -278,8 +267,8 @@ header{
         z-index: 1000;
     }
     &__a:hover{
-        box-shadow:  6px 8px 4px #262a2e, 
-        -2px -5px 4px #1c1e22;
+        box-shadow:  3px 4px 2px #262a2e, 
+        -1px -3px 2px #1c1e22;
         color: var(--color-cuaternario);
         
     }
@@ -607,9 +596,6 @@ header{
     .inicio__h2 span{
         font-size: 1.2rem;
     }
-    .inicio__container{
-        width: 305px;
-    }
     .inicio__move{
         font-size: .8rem;
     }
@@ -630,10 +616,11 @@ header{
         &__h2 span{
         font-size: 2.2rem;
         }
-        &__container{
-            width: 375px;
+        .move{
+            font-size: 1.3rem;
         }
-        &__move{
+        .move span{
+            position: relative;
             font-size: 1.3rem;
         }
         &__i{
@@ -678,11 +665,6 @@ header{
 @media screen and (min-width: 500px){
     .inicio{
         @include flex(row, nowrap, center, center);
-        &__container{
-            width: 327px;
-            position: relative;
-            left: -20px;
-        }
         &__img{
             width: 200px;
         }
@@ -773,13 +755,12 @@ header{
         &__h1{
             font-size: 2rem;
         }
-        &__move{
+        .move{
             font-size: 1.5rem;
         }
-
-        &__container{
-            width: 370px;
-            left: -6px;
+        .move span{
+            position: relative;
+            font-size: 1.5rem;
         }
         &__text--icons{
             gap: 65px;
@@ -817,13 +798,12 @@ header{
         &__h1{
             font-size: 2.5rem;
         }
-        &__move{
+        .move{
             font-size: 1.7rem;
         }
-
-        &__container{
-            width: 485px;
-            left: -10px;
+        .move span{
+            position: relative;
+            font-size: 1.7rem;
         }
         &__text--icons{
             gap: 65px;
@@ -1174,10 +1154,13 @@ header{
             font-size:4rem;
         }
         &__h1{
-            
             font-size: 2rem;
         }
-        &__move{
+        .move{
+            font-size: 2rem;
+        }
+        .move span{
+            position: relative;
             font-size: 2rem;
         }
 

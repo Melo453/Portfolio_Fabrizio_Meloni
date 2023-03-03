@@ -150,7 +150,7 @@
             <div class="inicio__text" data-aos="fade-right">
                 <h1 class="inicio__h2"> <span> Fabrizio </span> Meloni</h1>
                 <div class="inicio__container">
-                    <span class="text inicio__move"></span>
+                    <h2 class="move">I'm <span class="typed"></span></h2>
                 </div>
 
                 <div class="inicio__text--icons" data-aos="flip-down">
@@ -174,7 +174,7 @@
         <section id="about" class="info">
 
             <div class="info__text" data-aos="fade-right">
-                <h2 class="info__h2" data-aos="fade-down-right">About Us</h2>
+                <h2 class="info__h2" data-aos="fade-down-right">About Me</h2>
                 <p class="info__p">
                     Hello! My name is Fabrizio. I am a young software developer who loves exercising, programming and
                     learning about technology. Although I enjoy backend and frontend, I prefer programming with backend.
@@ -329,8 +329,17 @@
     <script src="/assets/js/sweetAlert.js"></script>
     <script src="/assets/js/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script>
+
+        var typed = new Typed(".typed", {
+        strings: ['Freelancer', "Web developer", "Full stack"],
+        typeSpeed: 150,
+        backSpeed:150,
+        loop:true
+        });
+
         particlesJS({
             "particles": {
                 "number": {
