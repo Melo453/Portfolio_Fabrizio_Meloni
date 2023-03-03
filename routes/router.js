@@ -24,7 +24,7 @@ router.post('/send-email',async (req,res) =>{
         secure: true, // true for 465, false for other ports
         auth: {
             user: 'fabrimeloni1@gmail.com', // generated ethereal user
-            pass: 'crffycsjtxplanjp', // generated ethereal password
+            pass: 'ksefgootogrhmdhz'
         },
         tls:{
             rejectUnauthorized: false
