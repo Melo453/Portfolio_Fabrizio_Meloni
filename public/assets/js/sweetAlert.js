@@ -9,19 +9,37 @@ $("#botton").click(function() {
         Swal.fire({
             icon: 'error',
             title: `Lack of data.`,
+
+            customClass:{
+                title: 'alert__title',
+                popup: 'alert__back',
+                confirmButton:'alert__button'
+        },
         })
         return false;
     }else if(!validator.test(mail)){
         Swal.fire({
             icon: 'error',
             title: `Invalid mail.`,
+        
+            customClass:{
+                title: 'alert__title',
+                popup: 'alert__back',
+                confirmButton:'alert__button'
+        },
         })
         return false;
     }
     else{
         Swal.fire({
             icon: 'success',
-            title: 'Mail sent.'
+            title: 'Mail sent.',
+
+            customClass:{
+                title: 'alert__title',
+                popup: 'alert__back',
+                confirmButton:'alert__button'
+        },
         });
     }
 });

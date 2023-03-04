@@ -208,6 +208,36 @@ header {
   color: var(--color-cuaternario);
 }
 
+.alert__title {
+  color: var(--color-secundario) !important;
+}
+
+.alert__back {
+  background-color: #202226 !important;
+  box-shadow: 6px 6px 4px #121316, -2px -5px 4px #272c2f !important;
+  padding: 0.5rem 0.5rem !important;
+  border-radius: 5% !important;
+}
+
+.alert__button {
+  cursor: pointer;
+  text-transform: uppercase !important;
+  padding: 0.4rem 1rem !important;
+  border-radius: 0.25rem !important;
+  background-color: #1a1b1e !important;
+  box-shadow: 4px 6px 4px #15171a, -2px -4px 4px #262a2e !important;
+}
+
+.alert__button:hover {
+  box-shadow: 1px 2px 1px #3e4048, -1px -2px 1px #090a0b !important;
+  color: var(--color-cuaternario) !important;
+}
+
+.alert__button:active {
+  box-shadow: inset 3px 6px 4px #1e1f23, inset -4px -7px 4px #16171a !important;
+  color: var(--color-cuaternario) !important;
+}
+
 .menu--mobile span {
   overflow: hidden;
   display: block;
@@ -717,8 +747,8 @@ header {
   background-color: #1a1b1e;
   box-shadow: 3px 6px 4px #16171a, -4px -7px 4px #1e1f23;
 }
-.contactt__btm:hover {
-  box-shadow: 3px 6px 4px #3e4048, -4px -7px 4px #090a0b;
+.contactt__btn:hover {
+  box-shadow: 1px 2px 1px #3e4048, -1px -2px 1px #090a0b;
   color: var(--color-cuaternario);
 }
 .contactt__btn:active {
@@ -742,7 +772,7 @@ header {
 }
 
 .scrollup:hover {
-  box-shadow: 6px 8px 4px #262a2e, -2px -5px 4px #1c1e22;
+  box-shadow: 3px 4px 4px #262a2e, -2px -5px 4px #1c1e22;
   color: var(--color-cuaternario);
 }
 
