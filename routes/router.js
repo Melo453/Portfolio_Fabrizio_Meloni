@@ -23,8 +23,8 @@ router.post('/send-email',async (req,res) =>{
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: 'fabrimeloni1@gmail.com', // generated ethereal user
-            pass: 'ksefgootogrhmdhz'
+            user: 'fabrielcapo1235@gmail.com', // generated ethereal user
+            pass: 'tdllogkanzfsrerx'
         },
         tls:{
             rejectUnauthorized: false
@@ -32,8 +32,8 @@ router.post('/send-email',async (req,res) =>{
     });
 
     const info = await transporter.sendMail({
-        from: '"Formulario Contacto" <fabrimeloni1@gmail.com>',
-        to: 'fabrimeloni1@gmail.com',
+        from: '"Formulario Contacto" <fabrielcapo1235@gmail.com>',
+        to: 'fabrielcapo1235@gmail.com',
         subject: 'Website contact form',
         html: contentHTML
     });
